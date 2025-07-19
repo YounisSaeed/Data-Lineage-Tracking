@@ -30,7 +30,7 @@ cp .env.example .env  # Edit .env to set your database and Airflow settings
 docker-compose up -d
 ```
 
-
+```bash
 ## 📂 Project Structure
 data-lineage-tracker/
 ├── dags/                        # Airflow workflows
@@ -46,6 +46,7 @@ data-lineage-tracker/
 │   └── postgres/                # PostgreSQL service config
 │       └── init.sql
 └── docker-compose.yml           # Service definitions
+```
 
 ## HOW TO TEST
 
