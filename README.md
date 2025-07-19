@@ -28,6 +28,8 @@ cp .env.example .env  # Edit .env to set your database and Airflow settings
 
 # Run project
 docker-compose up -d
+```
+
 
 ## 📂 Project Structure
 data-lineage-tracker/
@@ -61,6 +63,7 @@ docker-compose exec airflow python scripts/compare_snapshots.py --table customer
 # View results
 docker-compose exec postgres psql -U postgres -d data_catalog -c "
 SELECT * FROM schema_change_log ORDER BY changed_at DESC LIMIT 1;"
+```
 
 ## Project Cycle 
 ![Project Cycle Diagram](digram_of_project.png)
